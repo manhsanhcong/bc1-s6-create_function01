@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    var input = prompt("Nhập tên ngôi sao: ");
+    var check=false;
+    for (var i = 0; i < ngoiSao.length; i++){
+        if(input === ngoiSao[i]){
+            alert("Ngôi sao " + input + " thuộc chòm sao " + chomSao[i]);
+            check=true;
+        }
+    }
+    if(check === false) alert("Không tồn tại ngôi sao này!!");
+
+</script>
+</body>
+</html>
